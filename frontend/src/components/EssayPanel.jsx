@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import EssayStrengthMeter from './EssayStrengthMeter'
 
-const API_URL = 'http://127.0.0.1:8000'
+const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 
 const HARDCODED_PROMPTS = {
   "1": "Some students have a background, identity, interest, or talent that is so meaningful they believe their application would be incomplete without it. If this sounds like you, then please share your story.",
